@@ -488,12 +488,15 @@
     </footer>
 
     <!-- Модальное окно -->
-    <div class="backdrop is-hidden" data-modal>
+    <div data-modal class="backdrop is-hidden">
         <div class="modal">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem rem beatae earum magnam voluptate error.
-                Soluta pariatur, veritatis maiores, tenetur consequuntur totam eaque, error hic nostrum impedit mollitia?
-                Asperiores, vel.</p>
-            <button data-modal-close class="close-btn">x</button>
+                <button data-modal-close class="close-btn">
+                <svg class="modal-close icon">
+                    <use class="icon-network" href="./img/icons.svg#icon-close-black">
+                
+                    </use>
+                </svg>
+            </button>
         </div>
     </div>
     
