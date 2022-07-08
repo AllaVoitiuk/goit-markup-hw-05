@@ -132,15 +132,13 @@ img {
   letter-spacing: 0.02em;
   text-decoration: none;
 
-  transition: transform 250ms var(--timing-function);
+  transition: color 250ms var(--timing-function), fill 250ms var(--timing-function);
 }
 
 .adr-link:hover,
 .adr-link:focus {
   color: var(--color-accent);
   fill: var(--color-accent);
-
-  transform: scale(1.2);
 }
 
 /* logo */
@@ -373,11 +371,11 @@ img {
   display: block;
   text-decoration: none;
   transition: box-shadow 250ms var(--timing-function);
+  border: 1px solid #eeeeee;
 }
 
 .section-link:hover,
 .section-link:focus {
-  border: 1px solid #eeeeee;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -514,12 +512,6 @@ img {
   margin-right: 0px;
 }
 
-.button.secondary:hover,
-.button.secondary:focus {
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-
 .portfolio-card .list {
   display: flex;
   padding: 0;
@@ -641,13 +633,12 @@ img {
   border: 1px solid #afb1b8;
   border-radius: 4px;
 
-  transition: transform 250ms var(--timing-function), border 250ms var(--timing-function);
+  transition: border 250ms var(--timing-function);
 }
 
 .client-link:hover,
 .client-link:focus {
   border: 1px solid var(--color-accent);
-  transform: scale(1.2);
 }
 
 .client-link:hover .icon-client,
@@ -683,7 +674,8 @@ img {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  transition: transform 250ms var(--timing-function);
+  transition: transform 250ms var(--timing-function), background-color 250ms var(--timing-function),
+    fill 250ms var(--timing-function);
 }
 
 .social-link:hover,
@@ -755,6 +747,8 @@ footer {
   display: flex;
   background-color: rgba(255, 255, 255, 0.1);
   fill: var(--white-color);
+
+  transition: background-color 250ms var(--timing-function);
 }
 
 .social-link.footer:hover,
@@ -779,7 +773,7 @@ footer {
   left: 0px;
   top: 0px;
   position: fixed;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms var(--timing-function), visibility 250ms var(--timing-function);
 }
 
 .modal {
