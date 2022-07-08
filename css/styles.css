@@ -431,7 +431,7 @@ img {
 
 .link.current::after {
   position: absolute;
-  content: ;
+  content: '';
   width: 100%;
   height: 4px;
   background: var(--color-accent);
